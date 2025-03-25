@@ -36,6 +36,10 @@ var data = {
                       [
                           2,
                           "Put noodles in"
+                      ],
+                      [
+                          3,
+                          "Cook noodles"
                       ]
                   ],
                   "Nährwerte": {
@@ -67,20 +71,85 @@ var data = {
   ]
 }
   
-let DayOfWeek = 0;
+let currentDayOfWeek = 0;
+let currentMeals = 0;
+
 console.log(data);
 
-document.getElementById("header").innerHTML = data.Wochentage[DayOfWeek].Tag;
-document.getElementById("meal-left-timeOfDay").innerHTML = data.Wochentage[DayOfWeek].Mahlzeiten[0].Name;
+//Header
+document.getElementById("header").innerHTML = data.Wochentage[currentDayOfWeek].Tag;
 
-document.getElementById("meal-left-recipe-name").innerHTML = data.Wochentage[DayOfWeek].Mahlzeiten[0].Gericht;
+//Time of day
+document.getElementById("meal-left-timeOfDay").innerHTML = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Name;
 
-let zutaten = data.Wochentage[DayOfWeek].Mahlzeiten[0].Zutaten[0][1] + " " + data.Wochentage[DayOfWeek].Mahlzeiten[0].Zutaten[0][0]
+//Recipe
+document.getElementById("meal-left-recipe-name").innerHTML = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Gericht;
 
-document.getElementById("meal-left-ingredients").innerHTML = zutaten;
+//Ingredients aka zutaten
 
-let zubereitung = data.Wochentage[DayOfWeek].Mahlzeiten[0].Zubereitung[0][0] + ". " + data.Wochentage[DayOfWeek].Mahlzeiten[0].Zubereitung[0][1]
+let ingredients = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Zutaten;
+let ingredientsHtml = document.getElementById("meal-left-ingredients");
+ingredientsHtml.innerHTML = "Zutaten: </br>";
+ingredientsHtml.innerHTML += "<ul>";
 
-document.getElementById("meal-left-preperations").innerHTML = zubereitung;
+//Loop over all the ingredients, and display them in a list-style fashion onto the webpage
+for (let i = 0; i < ingredients.length; i++){
+  let currentIngredient = ingredients[i];
 
+  ingredientsHtml.innerHTML += "<li>" + currentIngredient[1] + " " + currentIngredient[0] + "</li>";
+}
+
+ingredientsHtml.innerHTML += "</ul> </br></br>"
+
+//let ersteZutat = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Zutaten[0][1] + " " + data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Zutaten[0][0]
+//document.getElementById("meal-left-ingredients").innerHTML = ersteZutat;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Zubereitungs
+let preperation = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Zubereitung;
+let preperationsHtml = document.getElementById("meal-left-preperations");
+
+preperationsHtml.innerHTML = "Zubereitung: </br>";
+preperationsHtml.innerHTML += "<ol>";
+
+for (let i = 0; i < preperation.length; i++){
+  let currentStep = preperation [i];
+  preperationsHtml.innerHTML += currentStep [0] + ". " + currentStep[1] + "</br>";
+}
+
+preperationsHtml.innerHTML += "</ol>";
 
