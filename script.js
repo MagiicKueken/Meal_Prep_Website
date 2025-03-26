@@ -1,75 +1,46 @@
 var data = {
-  "Wochentage": [
+    "Wochentage": [
       {
-          "Tag": "Montag",
-          "Mahlzeiten": [
-              {
-                  "Name": "Frühstück",
-                  "Gericht": "Overnight Oats mit Erdnussbutter & Beeren",
-                  "Zutaten": [
-                      [
-                          "Haferflocken",
-                          "50g"
-                      ],
-                      [
-                          "Milch",
-                          "200 ml"
-                      ],
-                      [
-                          "Erdnussbutter",
-                          "1 TL"
-                      ],
-                      [
-                          "Beeren",
-                          "50 g"
-                      ],
-                      [
-                          "Honig",
-                          "1 TL"
-                      ]
-                  ],
-                  "Zubereitung": [
-                      [
-                          1,
-                          "Bring water to boil"
-                      ],
-                      [
-                          2,
-                          "Put noodles in"
-                      ],
-                      [
-                          3,
-                          "Cook noodles"
-                      ]
-                  ],
-                  "Nährwerte": {
-                      "Kcal": 450,
-                      "Protein": 24,
-                      "KH": 50,
-                      "Fett": 15
-                  }
-              },
-              {
-                  "Name": "Abendessen",
-                  "Gericht": "Hähnchenpfanne mit Brokkoli & Süßkartoffeln",
-                  "Zutaten": {
-                      "Hähnchenbrust": "300 g",
-                      "Brokkoli": "300 g",
-                      "Süßkartoffeln": "300 g",
-                      "Olivenöl": "1 EL",
-                      "Salz, Pfeffer": "nach Geschmack"
-                  },
-                  "Nährwerte": {
-                      "Kcal": 520,
-                      "Protein": 55,
-                      "KH": 45,
-                      "Fett": 12
-                  }
-              }
-          ]
+        "Tag": "Dienstag",
+        "Mahlzeiten": [
+          {
+            "Name": "Abendessen",
+            "Gericht": "Rindersteak mit Ofengemüse",
+            "Zutaten": [
+              ["2", "Rindersteaks (je 150 g)"],
+              ["300 g", "Gemüse (Paprika, Zucchini, Möhren)"],
+              ["1 EL", "Olivenöl"],
+              ["Salz", "Pfeffer"]
+            ],
+            "Zubereitung": [
+              ["1", "Den Backofen auf 200 °C (Ober-/Unterhitze) vorheizen."],
+              ["2", "Das Gemüse waschen, in mundgerechte Stücke schneiden und mit Olivenöl, Salz und Pfeffer vermengen."],
+              ["3", "Das Gemüse auf einem Backblech verteilen und ca. 20 Minuten im Ofen garen."],
+              ["4", "Währenddessen das Steak mit Salz und Pfeffer würzen."],
+              ["5", "Eine Pfanne stark erhitzen und das Steak je nach gewünschtem Gargrad ca. 3 Minuten pro Seite braten."],
+              ["6", "Das Steak mit dem Ofengemüse servieren."]
+            ],
+            "Nährwerte": {
+              "Kcal": 600,
+              "Protein": 65,
+              "Kohlenhydrate": 35,
+              "Fett": 20
+            }
+          }
+        ],
+        "Nährwerte": {
+          "Kcal": 600,
+          "Protein": 65,
+          "Kohlenhydrate": 35,
+          "Fett": 20
+        }
       }
-  ]
-}
+    ]
+  }
+  
+  
+  
+
   
 let currentDayOfWeek = 0;
 let currentMeals = 0;
@@ -96,7 +67,7 @@ ingredientsHtml.innerHTML += "<ul>";
 for (let i = 0; i < ingredients.length; i++){
   let currentIngredient = ingredients[i];
 
-  ingredientsHtml.innerHTML += "<li>" + currentIngredient[1] + " " + currentIngredient[0] + "</li>";
+  ingredientsHtml.innerHTML += "<li>" + currentIngredient[0] + " " + currentIngredient[1] + "</li>";
 }
 
 ingredientsHtml.innerHTML += "</ul> </br></br>"

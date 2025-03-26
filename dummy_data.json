@@ -55,6 +55,16 @@
                         "Olivenöl": "1 EL",
                         "Salz, Pfeffer": "nach Geschmack"
                     },
+                    "Zubereitung": [
+                        [
+                            1,
+                            "Bring water to boil"
+                        ],
+                        [
+                            2,
+                            "Put noodles in"
+                        ]
+                    ],
                     "Nährwerte": {
                         "Kcal": 520,
                         "Protein": 55,
