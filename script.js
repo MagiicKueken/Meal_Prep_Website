@@ -72,7 +72,9 @@ for (let i = 0; i < ingredients.length; i++){
 
 ingredientsHtml.innerHTML += "</ul> </br></br>"
 
-//let ersteZutat = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Zutaten[0][1] + " " + data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Zutaten[0][0]
+//Preperations (also loop)
+
+
 //document.getElementById("meal-left-ingredients").innerHTML = ersteZutat;
 
 
@@ -111,6 +113,7 @@ ingredientsHtml.innerHTML += "</ul> </br></br>"
 
 
 //Zubereitungs
+
 let preperation = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Zubereitung;
 let preperationsHtml = document.getElementById("meal-left-preperations");
 
@@ -119,7 +122,7 @@ preperationsHtml.innerHTML += "<ol>";
 
 for (let i = 0; i < preperation.length; i++){
   let currentStep = preperation [i];
-  preperationsHtml.innerHTML += currentStep [0] + ". " + currentStep[1] + "</br></br>";
+  preperationsHtml.innerHTML += '<li type="1">' + currentStep[1] + "</li></br>";
 }
 
 preperationsHtml.innerHTML += "</ol>";
