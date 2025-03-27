@@ -119,7 +119,7 @@ preperationsHtml.innerHTML += "<ol>";
 
 for (let i = 0; i < preperation.length; i++){
   let currentStep = preperation [i];
-  preperationsHtml.innerHTML += currentStep [0] + ". " + currentStep[1] + "</br>";
+  preperationsHtml.innerHTML += currentStep [0] + ". " + currentStep[1] + "</br></br>";
 }
 
 preperationsHtml.innerHTML += "</ol>";
