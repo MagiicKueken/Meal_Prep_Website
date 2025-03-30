@@ -21,6 +21,33 @@
     }
 }
 
+/*Button*/
+button{
+    background-color: rgb(118, 173, 174);
+    border:none;
+    float:right;
+    margin-top:80px;
+}
+
+button:hover{
+    border:2px solid #000000;
+    background-color: #ffffff;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.open-button {
+    background-color: #555;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    top: 40px;
+    right: 8px;
+    width: 280px;
+  }
+
 
 /*Ordered List Styling*/
 ol {

@@ -1,4 +1,4 @@
-var data = {
+var initialData = {
     "Wochentage": [
       {
         "Tag": "Dienstag",
@@ -37,18 +37,31 @@ var data = {
       }
     ]
   }
-  
+   
   
   
 
+displayMeal(initialData);
+
+
+//Function for the JSON inputfield and changing data
+function openForm(){
+  let jsonString = prompt("Enter new JSON data:");
   
+  let jsonObject = JSON.parse(jsonString);
+  displayMeal(jsonObject);
+}
+
+function displayMeal(data){
+
 let currentDayOfWeek = 0;
 let currentMeals = 0;
 
-console.log(data);
 
 //Header
 document.getElementById("header").innerHTML = data.Wochentage[currentDayOfWeek].Tag;
+
+//Button 
 
 //Time of day
 document.getElementById("meal-left-timeOfDay").innerHTML = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Name;
@@ -74,46 +87,6 @@ ingredientsHtml.innerHTML += "</ul> </br></br>"
 
 //Preperations (also loop)
 
-
-//document.getElementById("meal-left-ingredients").innerHTML = ersteZutat;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//Zubereitungs
-
 let preperation = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Zubereitung;
 let preperationsHtml = document.getElementById("meal-left-preperations");
 
@@ -126,4 +99,4 @@ for (let i = 0; i < preperation.length; i++){
 }
 
 preperationsHtml.innerHTML += "</ol>";
-
+}
