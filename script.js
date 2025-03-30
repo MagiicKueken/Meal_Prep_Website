@@ -37,12 +37,8 @@ var initialData = {
       }
     ]
   }
-   
-  
-  
 
 displayMeal(initialData);
-
 
 //Function for the JSON inputfield and changing data
 function openForm(){
