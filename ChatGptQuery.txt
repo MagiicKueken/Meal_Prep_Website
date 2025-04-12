@@ -1,3 +1,5 @@
+Make me a week meal plan for next week (monday till friday). You should output in json, using the following C# model. Please note the comments in the C# model, they are instructions for you.
+
 using System;
 using System.Collections.Generic;
 
@@ -29,4 +31,3 @@ public class Naehrwerte
     public int Kohlenhydrate { get; set; }
     public int Fett { get; set; }
 }
-

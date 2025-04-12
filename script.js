@@ -1,6 +1,7 @@
-var initialData = {
-    "Wochentage": [
+var initialDayData = {
+    "Dates": [
       {
+        "Datum": "01.04.2025",
         "Tag": "Dienstag",
         "Mahlzeiten": [
           {
@@ -38,7 +39,7 @@ var initialData = {
     ]
   }
 
-displayMeal(initialData);
+displayMeal(initialDayData);
 
 //Function for the JSON inputfield and changing data
 function openForm(){
@@ -53,22 +54,20 @@ function displayMeal(data){
 let currentDayOfWeek = 0;
 let currentMeals = 0;
 
-
+console.log(data);
 //Header
-document.getElementById("header").innerHTML = data.Wochentage[currentDayOfWeek].Tag;
-
-//Button 
+document.getElementById("weekday").innerHTML = data.Dates[currentDayOfWeek].Tag;
+document.getElementById("meal-dateofDay").innerHTML = data.Dates[currentDayOfWeek].Datum;
 
 //Time of day
-document.getElementById("meal-left-timeOfDay").innerHTML = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Name;
+document.getElementById("meal-timeOfDay").innerHTML = data.Dates[currentDayOfWeek].Mahlzeiten[currentMeals].Name;
 
 //Recipe
-document.getElementById("meal-left-recipe-name").innerHTML = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Gericht;
+document.getElementById("meal-recipe-name").innerHTML = data.Dates[currentDayOfWeek].Mahlzeiten[currentMeals].Gericht;
 
 //Ingredients aka zutaten
-
-let ingredients = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Zutaten;
-let ingredientsHtml = document.getElementById("meal-left-ingredients");
+let ingredients = data.Dates[currentDayOfWeek].Mahlzeiten[currentMeals].Zutaten;
+let ingredientsHtml = document.getElementById("meal-ingredients");
 ingredientsHtml.innerHTML = "Zutaten: </br>";
 ingredientsHtml.innerHTML += "<ul>";
 
@@ -83,8 +82,8 @@ ingredientsHtml.innerHTML += "</ul> </br></br>"
 
 //Preperations (also loop)
 
-let preperation = data.Wochentage[currentDayOfWeek].Mahlzeiten[currentMeals].Zubereitung;
-let preperationsHtml = document.getElementById("meal-left-preperations");
+let preperation = data.Dates[currentDayOfWeek].Mahlzeiten[currentMeals].Zubereitung;
+let preperationsHtml = document.getElementById("meal-preperations");
 
 preperationsHtml.innerHTML = "Zubereitung: </br>";
 preperationsHtml.innerHTML += "<ol>";
