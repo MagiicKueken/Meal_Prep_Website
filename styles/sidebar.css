@@ -15,7 +15,7 @@
 
   /* Sidebar */
 .sidebar  {
-	font-size: 20px;
+	font-size: 35px;
 	display: inline-block;
 	width: 0px;
 	height: 100%;
@@ -26,7 +26,7 @@
 	left: 0px;
 	overflow-x: hidden;
 	padding-left: 0px;
-	line-height: 22px;
+	line-height: 0.8em;
 	padding-top: 20px;
 }
 
@@ -39,6 +39,7 @@
 
 .sidebar a:hover{
 	color: grey;
+    cursor: pointer;
 }
 
 .sidebar .closebtn {
@@ -54,4 +55,9 @@
     padding-left: 10px;
     float: left;
     position:absolute;
+}
+
+.sidebar-container{
+    z-index: 1;
+    cursor: pointer;
 }

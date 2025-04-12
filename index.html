@@ -14,15 +14,17 @@
         <!-- Sidebar -->
         <div id="mainn" onclick="openfunction()">&#9776;</div>
         <div id="sidenav" class="sidebar">
-            <a href="#"> Montag </a><br>
-            <a href="#"> Dienstag </a><br>
-            <a href="#"> Mittwoch </a><br>
-            <a href="#"> Donnerstag </a><br>
-            <a href="#"> Freitag </a><br>
-            <a href="#"> Samstag </a><br>
-            <a href="#"> Sonntag </a><br>
-            <button class="open-button" onclick="openForm()">JSON-Input</button>
-            <a href="#" class="closebtn" onclick="closefunction()">&times</a>
+            <div class="sidebar-container">
+                <a onclick="selectDay('0')"> Montag </a><br>
+                <a onclick="selectDay('1')"> Dienstag </a><br>
+                <a onclick="selectDay('2')"> Mittwoch </a><br>
+                <a onclick="selectDay('3')"> Donnerstag </a><br>
+                <a onclick="selectDay('4')"> Freitag </a><br>
+                <a onclick="selectDay('5')"> Samstag </a><br>
+                <a onclick="selectDay('6')"> Sonntag </a><br>
+                <button class="open-button" onclick="openForm()">JSON-Input</button>
+                <a href="#" class="closebtn" onclick="closefunction()">&times</a>
+            </div>
         </div>
 
         <img id="img-magiic-chef" src="assets/magiic-chef.png" alt="magiic-chef.png">
