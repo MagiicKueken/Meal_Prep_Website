@@ -1,0 +1,17 @@
+@media only screen and (max-width:400px){
+    #header{
+        font-size: 100%;
+    }
+    #section{
+        margin-left: 5%;
+        margin-top: 0;
+    }
+
+    #img-magiic-chef{
+        max-width: 120px;
+    }
+
+    #date-container{
+        padding-left: 35px;
+    }
+}

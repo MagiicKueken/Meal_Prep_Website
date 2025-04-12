@@ -1,6 +1,3 @@
-/* html{
-    background: linear-gradient(to bottom, #76adae 30%, #ffdbbb 50%);
-} */
 
 body{
     margin:0;
@@ -39,24 +36,6 @@ body{
     padding-top: 15px;
 }
 
-@media only screen and (max-width:400px){
-    #header{
-        font-size: 100%;
-    }
-    #section{
-        margin-left: 5%;
-        margin-top: 0;
-    }
-
-    #img-magiic-chef{
-        max-width: 120px;
-    }
-
-    #date-container{
-        padding-left: 35px;
-    }
-}
-
 /*Button*/
 /* button{
     background-color: rgb(118, 173, 174);
@@ -71,22 +50,6 @@ button:hover{
     border:2px solid #000000;
     background-color: #14888a;
 }
-
-/* Button used to open the contact form - fixed at the bottom of the page */
-.open-button {
-    background-color: #555;
-    color: white;
-    padding: 10px 10px;
-    border: none;
-    cursor: pointer;
-    opacity: 0.8;
-    right: 8px;
-    width: 100px;
-    position:absolute;
-    bottom: 26px;
-    height:3em;
-  }
-
 
 /*Ordered List Styling*/
 ol {
@@ -115,45 +78,3 @@ li {
     float: right;
 }
 
-/* Sidebar */
-.sidebar  {
-	font-size: 20px;
-	display: inline-block;
-	width: 0px;
-	height: 100%;
-	margin: 0px;
-	background-color: black;
-	position: fixed;
-	top: 0px;
-	left: 0px;
-	overflow-x: hidden;
-	padding-left: 0px;
-	line-height: 22px;
-	padding-top: 20px;
-}
-
-.sidebar a {
-	text-decoration: none;
-	color: white;
-	display: block;
-	padding-left: 25px;
-}
-
-.sidebar a:hover{
-	color: grey;
-}
-
-.sidebar .closebtn {
-	position: absolute;
-	top: 0px;
-	right: 15px;
-	padding-left: 20px;
-}
-
-#mainn {
-	font-size: 50px;
-	cursor: pointer;
-    padding-left: 10px;
-    float: left;
-    position:absolute;
-}
