@@ -9,26 +9,33 @@
 </head>
 <body>
     <div id="header">
-        <h1 id="weekday"></h1>
-        <span id="meal-dateofDay"></span>
+        <!-- Sidebar -->
+        <div id="mainn" onclick="openfunction()">&#9776;</div>
+        <div id="sidenav" class="sidebar">
+            <a href="#"> Montag </a><br>
+            <a href="#"> Dienstag </a><br>
+            <a href="#"> Mittwoch </a><br>
+            <a href="#"> Donnerstag </a><br>
+            <a href="#"> Freitag </a><br>
+            <a href="#"> Samstag </a><br>
+            <a href="#"> Sonntag </a><br>
+            <a href="#" class="closebtn" onclick="closefunction()">&times</a>
+        </div>
+
+        <h1 id="weekday" class="center"></h1>
+        <h1 id="meal-dateofDay" class="center"></h1>
+
         <button class="open-button" onclick="openForm()">JSON-Input</button>
     </div>
-    
-    
 
-
+    
     <section id="section">
-        
         <h1 id="meal-timeOfDay">timeOfDay</h1> <!--Green-->
         <p id="meal-recipe-name">recipe-name</p> <!--Black-->
         <div id="meal-ingredients"> </div> <!--Purple-->
         <div id="meal-preperations"> </div> <!--Blue-->
-            
     </section>
 
-
-
     <script src="script.js"></script>
-    
 </body>
 </html>

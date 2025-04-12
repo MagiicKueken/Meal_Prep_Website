@@ -95,3 +95,13 @@ for (let i = 0; i < preperation.length; i++){
 
 preperationsHtml.innerHTML += "</ol>";
 }
+
+//Sidebar
+function openfunction(){
+  document.getElementById("sidenav").style.width="250px";
+  document.getElementById("sidenav").style.transition="width 0.5s";
+}
+
+function closefunction(){
+  document.getElementById("sidenav").style.width="0px";
+}

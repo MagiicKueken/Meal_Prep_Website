@@ -1,3 +1,7 @@
+body{
+    margin: 0;
+}
+
 #section{
     font-size:150%;
     text-align: left;
@@ -11,7 +15,10 @@
     color:rgb(0, 0, 0);
     font-size:"50px";
     font-family:'Lucida Sans';
-    line-height: 100px;
+    /* line-height: 100px; */
+}
+
+.center{
     text-align: center;
 }
 
@@ -78,3 +85,47 @@ ol li {
     align-items: flex-start;
 }
 */
+
+
+/* Sidebar */
+.sidebar  {
+	font-size: 20px;
+	display: inline-block;
+	width: 0px;
+	height: 100%;
+	margin: 0px;
+	background-color: black;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	overflow-x: hidden;
+	padding-left: 0px;
+	line-height: 60px;
+	padding-top: 20px;
+}
+
+.sidebar a {
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding-left: 25px;
+}
+
+.sidebar a:hover{
+	color: grey;
+}
+
+.sidebar .closebtn {
+	position: absolute;
+	top: 0px;
+	right: 25px;
+	padding-left: 20px;
+
+}
+
+#mainn {
+	font-size: 35px;
+	cursor: pointer;
+    padding-left: 10px;
+    /* margin-left: 10px; */
+}
