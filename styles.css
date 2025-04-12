@@ -8,13 +8,6 @@ body{
     color:#3e3e3e;
 }
 
-#section{
-    font-size:150%;
-    text-align: left;
-    margin-left: 10%;
-    margin-top: 5%;
-}
-
 #header{
     background-color: #519ca8;
     /* background: linear-gradient(to bottom, #76adae 90%, #ffdbbb 150%); */
@@ -22,9 +15,22 @@ body{
     font-size: 150%;
     margin:0;
     padding-bottom: 20px;
-    padding-top: 10px;
+    /* padding-top: 10px; */
     border-bottom: 20px solid #080b367f;
     /* line-height: 100px; */
+}
+
+#header h1{
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+#section{
+    font-size:150%;
+    text-align: left;
+    margin-left: 10%;
+    margin-top: 2.5em;
+    padding-right: 5px;
 }
 
 .center{
@@ -34,8 +40,20 @@ body{
 }
 
 @media only screen and (max-width:400px){
+    #header{
+        font-size: 100%;
+    }
     #section{
         margin-left: 5%;
+        margin-top: 0;
+    }
+
+    #img-magiic-chef{
+        max-width: 120px;
+    }
+
+    #date-container{
+        padding-left: 35px;
     }
 }
 
