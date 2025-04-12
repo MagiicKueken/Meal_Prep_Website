@@ -15,6 +15,9 @@ body{
     /* padding-top: 10px; */
     border-bottom: 20px solid #080b367f;
     /* line-height: 100px; */
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
 #header h1{
@@ -26,8 +29,9 @@ body{
     font-size:150%;
     text-align: left;
     margin-left: 10%;
-    margin-top: 2.5em;
-    padding-right: 5px;
+    margin-top: 180px;
+    padding-top: 2.5em;
+    padding-right: 10%;
 }
 
 .center{
