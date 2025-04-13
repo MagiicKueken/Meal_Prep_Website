@@ -60,6 +60,7 @@
 .sidebar-container{
     z-index: 1;
     cursor: pointer;
+	user-select:none;
 }
 
 .timeOfDay-container{
