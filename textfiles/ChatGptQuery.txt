@@ -1,4 +1,5 @@
 Make me a week meal plan for next week (monday till sunday). Each day should have 3 meals: Fruhstuck, Mittagessen, Abendessen. You should output in json, using the following C# model. Please note the comments in the C# model, they are instructions for you.
+use german date formatting
 
 using System;
 using System.Collections.Generic;
