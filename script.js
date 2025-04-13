@@ -1097,6 +1097,7 @@ function closefunction(){
 
 function selectDay(day){
   try{
+    currentDayOfWeek = day;
     displayMeal(data.Dates[day], 2);
   }
   catch(ex){
@@ -1112,4 +1113,8 @@ function selectDay(day){
       document.getElementById("container-" + i).style.display="none";
     }
   }
+}
+
+function selectMeal(meal){
+  displayMeal(data.Dates[currentDayOfWeek], meal)
 }
