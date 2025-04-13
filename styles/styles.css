@@ -10,6 +10,7 @@ body{
     /* background: linear-gradient(to bottom, #76adae 90%, #ffdbbb 150%); */
     color:#080b36;
     font-size: 150%;
+    font-family: 'Trebuchet MS', sans-serif;
     margin:0;
     padding-bottom: 20px;
     /* padding-top: 10px; */
@@ -25,8 +26,13 @@ body{
     margin-top: 0;
 }
 
+#date-container{
+    margin-left: 70px;
+}
+
 #section{
     font-size:150%;
+    font-family: 'Trebuchet MS', sans-serif;
     text-align: left;
     margin-left: 10%;
     margin-top: 180px;
@@ -36,8 +42,6 @@ body{
 
 .center{
     text-align: center;
-    padding-left: 12%;
-    padding-top: 15px;
 }
 
 /*Button*/
