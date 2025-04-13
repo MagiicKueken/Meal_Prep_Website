@@ -5,28 +5,149 @@ var data = {
       "Tag": "Montag",
       "Mahlzeiten": [
         {
-          "Name": "Mittagessen",
-          "Gericht": "Hähnchenbrust mit Süßkartoffeln und Brokkoli",
+          "Name": "Frühstück",
+          "Gericht": "Haferflocken mit Apfel und Zimt",
           "Zutaten": [
-            ["2", "Hähnchenbrustfilets (je 150 g)"],
-            ["2", "große Süßkartoffeln"],
-            ["300 g", "Brokkoli"],
-            ["2 EL", "Olivenöl"],
-            ["1 TL", "Paprikapulver"],
-            ["nach Geschmack", "Salz und Pfeffer"]
+            [
+              "50 g",
+              "Haferflocken"
+            ],
+            [
+              "200 ml",
+              "Milch oder pflanzliche Alternative"
+            ],
+            [
+              "1",
+              "Apfel"
+            ],
+            [
+              "1 TL",
+              "Zimt"
+            ]
           ],
           "Zubereitung": [
-            ["1", "Den Backofen auf 200 °C (Ober-/Unterhitze) vorheizen."],
-            ["2", "Süßkartoffeln schälen, würfeln, mit 1 EL Olivenöl und Paprika würzen und im Ofen 25 Minuten backen."],
-            ["3", "Hähnchenbrust salzen, pfeffern und in 1 EL Öl in der Pfanne braten (je Seite ca. 5–6 Minuten)."],
-            ["4", "Brokkoli in Röschen schneiden und 5 Minuten dämpfen."],
-            ["5", "Alles zusammen auf einem Teller anrichten und servieren."]
+            [
+              "1",
+              "Milch in einem Topf erhitzen."
+            ],
+            [
+              "2",
+              "Haferflocken hinzufügen und unter Rühren aufkochen lassen."
+            ],
+            [
+              "3",
+              "Apfel in kleine Stücke schneiden und zusammen mit Zimt hinzufügen."
+            ],
+            [
+              "4",
+              "5 Minuten köcheln lassen, dann servieren."
+            ]
           ],
           "Nährwerte": {
-            "Kcal": 580,
-            "Protein": 50,
-            "Kohlenhydrate": 35,
-            "Fett": 22
+            "Kcal": 350,
+            "Protein": 10,
+            "Kohlenhydrate": 50,
+            "Fett": 8
+          }
+        },
+        {
+          "Name": "Mittagessen",
+          "Gericht": "Hähnchenbrust mit Reis und Brokkoli",
+          "Zutaten": [
+            [
+              "150 g",
+              "Hähnchenbrust"
+            ],
+            [
+              "100 g",
+              "Reis"
+            ],
+            [
+              "200 g",
+              "Brokkoli"
+            ],
+            [
+              "1 EL",
+              "Olivenöl"
+            ],
+            [
+              "Gewürze",
+              "nach Geschmack"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Reis nach Packungsanweisung kochen."
+            ],
+            [
+              "2",
+              "Brokkoli in Röschen schneiden und dämpfen."
+            ],
+            [
+              "3",
+              "Hähnchenbrust mit Öl einreiben und würzen."
+            ],
+            [
+              "4",
+              "In einer Pfanne von beiden Seiten goldbraun braten."
+            ],
+            [
+              "5",
+              "Mit Reis und Brokkoli servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 550,
+            "Protein": 40,
+            "Kohlenhydrate": 45,
+            "Fett": 20
+          }
+        },
+        {
+          "Name": "Abendessen",
+          "Gericht": "Gemüsesuppe mit Vollkornbrot",
+          "Zutaten": [
+            [
+              "1",
+              "Karotte"
+            ],
+            [
+              "1",
+              "Kartoffel"
+            ],
+            [
+              "100 g",
+              "Lauch"
+            ],
+            [
+              "500 ml",
+              "Gemüsebrühe"
+            ],
+            [
+              "1",
+              "Scheibe Vollkornbrot"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Gemüse schälen und klein schneiden."
+            ],
+            [
+              "2",
+              "In Gemüsebrühe 15 Minuten köcheln lassen."
+            ],
+            [
+              "3",
+              "Nach Geschmack würzen und mit Brot servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 300,
+            "Protein": 8,
+            "Kohlenhydrate": 40,
+            "Fett": 6
           }
         }
       ]
@@ -36,27 +157,137 @@ var data = {
       "Tag": "Dienstag",
       "Mahlzeiten": [
         {
-          "Name": "Mittagessen",
-          "Gericht": "Lachsfilet mit Quinoa und grünem Spargel",
+          "Name": "Frühstück",
+          "Gericht": "Vollkornbrot mit Avocado und Ei",
           "Zutaten": [
-            ["2", "Lachsfilets (je 150 g)"],
-            ["150 g", "Quinoa"],
-            ["250 g", "grüner Spargel"],
-            ["1 EL", "Zitronensaft"],
-            ["2 EL", "Olivenöl"],
-            ["nach Geschmack", "Salz und Pfeffer"]
+            [
+              "2 Scheiben",
+              "Vollkornbrot"
+            ],
+            [
+              "1",
+              "Avocado"
+            ],
+            [
+              "2",
+              "Eier"
+            ]
           ],
           "Zubereitung": [
-            ["1", "Quinoa gründlich waschen und nach Packungsanleitung in Salzwasser kochen."],
-            ["2", "Spargel waschen, die holzigen Enden abschneiden und in 1 EL Öl ca. 8 Minuten anbraten."],
-            ["3", "Lachsfilets mit Salz, Pfeffer und Zitronensaft würzen und in 1 EL Öl von beiden Seiten je 4–5 Minuten braten."],
-            ["4", "Lachs mit Quinoa und Spargel servieren."]
+            [
+              "1",
+              "Eier nach Wunsch hart oder weich kochen."
+            ],
+            [
+              "2",
+              "Avocado halbieren, entkernen und Fruchtfleisch auf das Brot streichen."
+            ],
+            [
+              "3",
+              "Eier schälen, in Scheiben schneiden und auf die Avocado legen."
+            ],
+            [
+              "4",
+              "Nach Geschmack würzen und servieren."
+            ]
           ],
           "Nährwerte": {
-            "Kcal": 610,
-            "Protein": 45,
+            "Kcal": 420,
+            "Protein": 18,
             "Kohlenhydrate": 30,
-            "Fett": 35
+            "Fett": 25
+          }
+        },
+        {
+          "Name": "Mittagessen",
+          "Gericht": "Linseneintopf mit Karotten und Sellerie",
+          "Zutaten": [
+            [
+              "150 g",
+              "Linsen"
+            ],
+            [
+              "2",
+              "Karotten"
+            ],
+            [
+              "1 Stange",
+              "Sellerie"
+            ],
+            [
+              "500 ml",
+              "Gemüsebrühe"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Gemüse schälen und klein schneiden."
+            ],
+            [
+              "2",
+              "Linsen mit Gemüse in Gemüsebrühe 25 Minuten köcheln lassen."
+            ],
+            [
+              "3",
+              "Nach Geschmack mit Salz, Pfeffer und Kräutern würzen."
+            ],
+            [
+              "4",
+              "Heiß servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 480,
+            "Protein": 25,
+            "Kohlenhydrate": 50,
+            "Fett": 10
+          }
+        },
+        {
+          "Name": "Abendessen",
+          "Gericht": "Rührei mit Spinat und Tomaten",
+          "Zutaten": [
+            [
+              "3",
+              "Eier"
+            ],
+            [
+              "100 g",
+              "Spinat"
+            ],
+            [
+              "2",
+              "Tomaten"
+            ],
+            [
+              "1 TL",
+              "Öl"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Spinat waschen, Tomaten würfeln."
+            ],
+            [
+              "2",
+              "Eier in einer Schüssel verquirlen."
+            ],
+            [
+              "3",
+              "Öl in Pfanne erhitzen, Gemüse kurz anbraten."
+            ],
+            [
+              "4",
+              "Eier dazugeben und unter Rühren stocken lassen."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 320,
+            "Protein": 20,
+            "Kohlenhydrate": 10,
+            "Fett": 22
           }
         }
       ]
@@ -66,32 +297,149 @@ var data = {
       "Tag": "Mittwoch",
       "Mahlzeiten": [
         {
-          "Name": "Mittagessen",
-          "Gericht": "Vegetarische Lasagne mit Zucchini und Spinat",
+          "Name": "Frühstück",
+          "Gericht": "Haferflocken mit Apfel und Zimt",
           "Zutaten": [
-            ["6", "Lasagneplatten (Vollkorn)"],
-            ["1", "Zucchini"],
-            ["150 g", "frischer Spinat"],
-            ["250 g", "passierte Tomaten"],
-            ["1", "Zwiebel"],
-            ["1", "Knoblauchzehe"],
-            ["150 g", "Mozzarella"],
-            ["1 EL", "Olivenöl"],
-            ["nach Geschmack", "Salz, Pfeffer, Oregano"]
+            [
+              "50 g",
+              "Haferflocken"
+            ],
+            [
+              "200 ml",
+              "Milch oder pflanzliche Alternative"
+            ],
+            [
+              "1",
+              "Apfel"
+            ],
+            [
+              "1 TL",
+              "Zimt"
+            ]
           ],
           "Zubereitung": [
-            ["1", "Backofen auf 180 °C vorheizen."],
-            ["2", "Zwiebel und Knoblauch fein hacken, in Öl anbraten."],
-            ["3", "Zucchini in Scheiben schneiden und mit Spinat hinzufügen, kurz dünsten."],
-            ["4", "Passierte Tomaten und Gewürze zugeben, 10 Minuten köcheln lassen."],
-            ["5", "In eine Auflaufform abwechselnd Lasagneplatten, Gemüsesoße und Mozzarella schichten."],
-            ["6", "Für 30 Minuten im Ofen backen."]
+            [
+              "1",
+              "Milch in einem Topf erhitzen."
+            ],
+            [
+              "2",
+              "Haferflocken hinzufügen und unter Rühren aufkochen lassen."
+            ],
+            [
+              "3",
+              "Apfel in kleine Stücke schneiden und zusammen mit Zimt hinzufügen."
+            ],
+            [
+              "4",
+              "5 Minuten köcheln lassen, dann servieren."
+            ]
           ],
           "Nährwerte": {
-            "Kcal": 540,
-            "Protein": 28,
+            "Kcal": 350,
+            "Protein": 10,
+            "Kohlenhydrate": 50,
+            "Fett": 8
+          }
+        },
+        {
+          "Name": "Mittagessen",
+          "Gericht": "Hähnchenbrust mit Reis und Brokkoli",
+          "Zutaten": [
+            [
+              "150 g",
+              "Hähnchenbrust"
+            ],
+            [
+              "100 g",
+              "Reis"
+            ],
+            [
+              "200 g",
+              "Brokkoli"
+            ],
+            [
+              "1 EL",
+              "Olivenöl"
+            ],
+            [
+              "Gewürze",
+              "nach Geschmack"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Reis nach Packungsanweisung kochen."
+            ],
+            [
+              "2",
+              "Brokkoli in Röschen schneiden und dämpfen."
+            ],
+            [
+              "3",
+              "Hähnchenbrust mit Öl einreiben und würzen."
+            ],
+            [
+              "4",
+              "In einer Pfanne von beiden Seiten goldbraun braten."
+            ],
+            [
+              "5",
+              "Mit Reis und Brokkoli servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 550,
+            "Protein": 40,
             "Kohlenhydrate": 45,
-            "Fett": 25
+            "Fett": 20
+          }
+        },
+        {
+          "Name": "Abendessen",
+          "Gericht": "Gemüsesuppe mit Vollkornbrot",
+          "Zutaten": [
+            [
+              "1",
+              "Karotte"
+            ],
+            [
+              "1",
+              "Kartoffel"
+            ],
+            [
+              "100 g",
+              "Lauch"
+            ],
+            [
+              "500 ml",
+              "Gemüsebrühe"
+            ],
+            [
+              "1",
+              "Scheibe Vollkornbrot"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Gemüse schälen und klein schneiden."
+            ],
+            [
+              "2",
+              "In Gemüsebrühe 15 Minuten köcheln lassen."
+            ],
+            [
+              "3",
+              "Nach Geschmack würzen und mit Brot servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 300,
+            "Protein": 8,
+            "Kohlenhydrate": 40,
+            "Fett": 6
           }
         }
       ]
@@ -101,28 +449,137 @@ var data = {
       "Tag": "Donnerstag",
       "Mahlzeiten": [
         {
-          "Name": "Mittagessen",
-          "Gericht": "Putenstreifen mit Paprika-Reis",
+          "Name": "Frühstück",
+          "Gericht": "Vollkornbrot mit Avocado und Ei",
           "Zutaten": [
-            ["300 g", "Putenbrustfilet"],
-            ["1", "rote Paprika"],
-            ["1", "gelbe Paprika"],
-            ["150 g", "Reis"],
-            ["1 EL", "Sojasauce"],
-            ["1 EL", "Rapsöl"],
-            ["nach Geschmack", "Salz und Pfeffer"]
+            [
+              "2 Scheiben",
+              "Vollkornbrot"
+            ],
+            [
+              "1",
+              "Avocado"
+            ],
+            [
+              "2",
+              "Eier"
+            ]
           ],
           "Zubereitung": [
-            ["1", "Reis in Salzwasser kochen."],
-            ["2", "Paprika in Streifen schneiden, Pute würfeln."],
-            ["3", "Putenwürfel in Öl anbraten, dann Paprika zugeben und mit Sojasauce würzen."],
-            ["4", "Mit dem gekochten Reis servieren."]
+            [
+              "1",
+              "Eier nach Wunsch hart oder weich kochen."
+            ],
+            [
+              "2",
+              "Avocado halbieren, entkernen und Fruchtfleisch auf das Brot streichen."
+            ],
+            [
+              "3",
+              "Eier schälen, in Scheiben schneiden und auf die Avocado legen."
+            ],
+            [
+              "4",
+              "Nach Geschmack würzen und servieren."
+            ]
           ],
           "Nährwerte": {
-            "Kcal": 580,
-            "Protein": 42,
+            "Kcal": 420,
+            "Protein": 18,
+            "Kohlenhydrate": 30,
+            "Fett": 25
+          }
+        },
+        {
+          "Name": "Mittagessen",
+          "Gericht": "Linseneintopf mit Karotten und Sellerie",
+          "Zutaten": [
+            [
+              "150 g",
+              "Linsen"
+            ],
+            [
+              "2",
+              "Karotten"
+            ],
+            [
+              "1 Stange",
+              "Sellerie"
+            ],
+            [
+              "500 ml",
+              "Gemüsebrühe"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Gemüse schälen und klein schneiden."
+            ],
+            [
+              "2",
+              "Linsen mit Gemüse in Gemüsebrühe 25 Minuten köcheln lassen."
+            ],
+            [
+              "3",
+              "Nach Geschmack mit Salz, Pfeffer und Kräutern würzen."
+            ],
+            [
+              "4",
+              "Heiß servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 480,
+            "Protein": 25,
             "Kohlenhydrate": 50,
-            "Fett": 18
+            "Fett": 10
+          }
+        },
+        {
+          "Name": "Abendessen",
+          "Gericht": "Rührei mit Spinat und Tomaten",
+          "Zutaten": [
+            [
+              "3",
+              "Eier"
+            ],
+            [
+              "100 g",
+              "Spinat"
+            ],
+            [
+              "2",
+              "Tomaten"
+            ],
+            [
+              "1 TL",
+              "Öl"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Spinat waschen, Tomaten würfeln."
+            ],
+            [
+              "2",
+              "Eier in einer Schüssel verquirlen."
+            ],
+            [
+              "3",
+              "Öl in Pfanne erhitzen, Gemüse kurz anbraten."
+            ],
+            [
+              "4",
+              "Eier dazugeben und unter Rühren stocken lassen."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 320,
+            "Protein": 20,
+            "Kohlenhydrate": 10,
+            "Fett": 22
           }
         }
       ]
@@ -132,29 +589,441 @@ var data = {
       "Tag": "Freitag",
       "Mahlzeiten": [
         {
-          "Name": "Mittagessen",
-          "Gericht": "Kartoffel-Gemüse-Pfanne mit Ei",
+          "Name": "Frühstück",
+          "Gericht": "Haferflocken mit Apfel und Zimt",
           "Zutaten": [
-            ["300 g", "Kartoffeln"],
-            ["1", "Karotte"],
-            ["100 g", "Zucchini"],
-            ["100 g", "Brokkoli"],
-            ["2", "Eier"],
-            ["1 EL", "Rapsöl"],
-            ["nach Geschmack", "Salz, Pfeffer, Paprika"]
+            [
+              "50 g",
+              "Haferflocken"
+            ],
+            [
+              "200 ml",
+              "Milch oder pflanzliche Alternative"
+            ],
+            [
+              "1",
+              "Apfel"
+            ],
+            [
+              "1 TL",
+              "Zimt"
+            ]
           ],
           "Zubereitung": [
-            ["1", "Kartoffeln schälen, würfeln und in Salzwasser 10 Minuten vorkochen."],
-            ["2", "Gemüse klein schneiden."],
-            ["3", "Öl in der Pfanne erhitzen, Kartoffeln und Gemüse anbraten."],
-            ["4", "Eier darüber schlagen, stocken lassen und würzen."],
-            ["5", "Heiß servieren."]
+            [
+              "1",
+              "Milch in einem Topf erhitzen."
+            ],
+            [
+              "2",
+              "Haferflocken hinzufügen und unter Rühren aufkochen lassen."
+            ],
+            [
+              "3",
+              "Apfel in kleine Stücke schneiden und zusammen mit Zimt hinzufügen."
+            ],
+            [
+              "4",
+              "5 Minuten köcheln lassen, dann servieren."
+            ]
           ],
           "Nährwerte": {
-            "Kcal": 500,
-            "Protein": 22,
+            "Kcal": 350,
+            "Protein": 10,
+            "Kohlenhydrate": 50,
+            "Fett": 8
+          }
+        },
+        {
+          "Name": "Mittagessen",
+          "Gericht": "Hähnchenbrust mit Reis und Brokkoli",
+          "Zutaten": [
+            [
+              "150 g",
+              "Hähnchenbrust"
+            ],
+            [
+              "100 g",
+              "Reis"
+            ],
+            [
+              "200 g",
+              "Brokkoli"
+            ],
+            [
+              "1 EL",
+              "Olivenöl"
+            ],
+            [
+              "Gewürze",
+              "nach Geschmack"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Reis nach Packungsanweisung kochen."
+            ],
+            [
+              "2",
+              "Brokkoli in Röschen schneiden und dämpfen."
+            ],
+            [
+              "3",
+              "Hähnchenbrust mit Öl einreiben und würzen."
+            ],
+            [
+              "4",
+              "In einer Pfanne von beiden Seiten goldbraun braten."
+            ],
+            [
+              "5",
+              "Mit Reis und Brokkoli servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 550,
+            "Protein": 40,
             "Kohlenhydrate": 45,
+            "Fett": 20
+          }
+        },
+        {
+          "Name": "Abendessen",
+          "Gericht": "Gemüsesuppe mit Vollkornbrot",
+          "Zutaten": [
+            [
+              "1",
+              "Karotte"
+            ],
+            [
+              "1",
+              "Kartoffel"
+            ],
+            [
+              "100 g",
+              "Lauch"
+            ],
+            [
+              "500 ml",
+              "Gemüsebrühe"
+            ],
+            [
+              "1",
+              "Scheibe Vollkornbrot"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Gemüse schälen und klein schneiden."
+            ],
+            [
+              "2",
+              "In Gemüsebrühe 15 Minuten köcheln lassen."
+            ],
+            [
+              "3",
+              "Nach Geschmack würzen und mit Brot servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 300,
+            "Protein": 8,
+            "Kohlenhydrate": 40,
+            "Fett": 6
+          }
+        }
+      ]
+    },
+    {
+      "Datum": "2025-04-19",
+      "Tag": "Samstag",
+      "Mahlzeiten": [
+        {
+          "Name": "Frühstück",
+          "Gericht": "Vollkornbrot mit Avocado und Ei",
+          "Zutaten": [
+            [
+              "2 Scheiben",
+              "Vollkornbrot"
+            ],
+            [
+              "1",
+              "Avocado"
+            ],
+            [
+              "2",
+              "Eier"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Eier nach Wunsch hart oder weich kochen."
+            ],
+            [
+              "2",
+              "Avocado halbieren, entkernen und Fruchtfleisch auf das Brot streichen."
+            ],
+            [
+              "3",
+              "Eier schälen, in Scheiben schneiden und auf die Avocado legen."
+            ],
+            [
+              "4",
+              "Nach Geschmack würzen und servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 420,
+            "Protein": 18,
+            "Kohlenhydrate": 30,
             "Fett": 25
+          }
+        },
+        {
+          "Name": "Mittagessen",
+          "Gericht": "Linseneintopf mit Karotten und Sellerie",
+          "Zutaten": [
+            [
+              "150 g",
+              "Linsen"
+            ],
+            [
+              "2",
+              "Karotten"
+            ],
+            [
+              "1 Stange",
+              "Sellerie"
+            ],
+            [
+              "500 ml",
+              "Gemüsebrühe"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Gemüse schälen und klein schneiden."
+            ],
+            [
+              "2",
+              "Linsen mit Gemüse in Gemüsebrühe 25 Minuten köcheln lassen."
+            ],
+            [
+              "3",
+              "Nach Geschmack mit Salz, Pfeffer und Kräutern würzen."
+            ],
+            [
+              "4",
+              "Heiß servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 480,
+            "Protein": 25,
+            "Kohlenhydrate": 50,
+            "Fett": 10
+          }
+        },
+        {
+          "Name": "Abendessen",
+          "Gericht": "Rührei mit Spinat und Tomaten",
+          "Zutaten": [
+            [
+              "3",
+              "Eier"
+            ],
+            [
+              "100 g",
+              "Spinat"
+            ],
+            [
+              "2",
+              "Tomaten"
+            ],
+            [
+              "1 TL",
+              "Öl"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Spinat waschen, Tomaten würfeln."
+            ],
+            [
+              "2",
+              "Eier in einer Schüssel verquirlen."
+            ],
+            [
+              "3",
+              "Öl in Pfanne erhitzen, Gemüse kurz anbraten."
+            ],
+            [
+              "4",
+              "Eier dazugeben und unter Rühren stocken lassen."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 320,
+            "Protein": 20,
+            "Kohlenhydrate": 10,
+            "Fett": 22
+          }
+        }
+      ]
+    },
+    {
+      "Datum": "2025-04-20",
+      "Tag": "Sonntag",
+      "Mahlzeiten": [
+        {
+          "Name": "Frühstück",
+          "Gericht": "Haferflocken mit Apfel und Zimt",
+          "Zutaten": [
+            [
+              "50 g",
+              "Haferflocken"
+            ],
+            [
+              "200 ml",
+              "Milch oder pflanzliche Alternative"
+            ],
+            [
+              "1",
+              "Apfel"
+            ],
+            [
+              "1 TL",
+              "Zimt"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Milch in einem Topf erhitzen."
+            ],
+            [
+              "2",
+              "Haferflocken hinzufügen und unter Rühren aufkochen lassen."
+            ],
+            [
+              "3",
+              "Apfel in kleine Stücke schneiden und zusammen mit Zimt hinzufügen."
+            ],
+            [
+              "4",
+              "5 Minuten köcheln lassen, dann servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 350,
+            "Protein": 10,
+            "Kohlenhydrate": 50,
+            "Fett": 8
+          }
+        },
+        {
+          "Name": "Mittagessen",
+          "Gericht": "Hähnchenbrust mit Reis und Brokkoli",
+          "Zutaten": [
+            [
+              "150 g",
+              "Hähnchenbrust"
+            ],
+            [
+              "100 g",
+              "Reis"
+            ],
+            [
+              "200 g",
+              "Brokkoli"
+            ],
+            [
+              "1 EL",
+              "Olivenöl"
+            ],
+            [
+              "Gewürze",
+              "nach Geschmack"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Reis nach Packungsanweisung kochen."
+            ],
+            [
+              "2",
+              "Brokkoli in Röschen schneiden und dämpfen."
+            ],
+            [
+              "3",
+              "Hähnchenbrust mit Öl einreiben und würzen."
+            ],
+            [
+              "4",
+              "In einer Pfanne von beiden Seiten goldbraun braten."
+            ],
+            [
+              "5",
+              "Mit Reis und Brokkoli servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 550,
+            "Protein": 40,
+            "Kohlenhydrate": 45,
+            "Fett": 20
+          }
+        },
+        {
+          "Name": "Abendessen",
+          "Gericht": "Gemüsesuppe mit Vollkornbrot",
+          "Zutaten": [
+            [
+              "1",
+              "Karotte"
+            ],
+            [
+              "1",
+              "Kartoffel"
+            ],
+            [
+              "100 g",
+              "Lauch"
+            ],
+            [
+              "500 ml",
+              "Gemüsebrühe"
+            ],
+            [
+              "1",
+              "Scheibe Vollkornbrot"
+            ]
+          ],
+          "Zubereitung": [
+            [
+              "1",
+              "Gemüse schälen und klein schneiden."
+            ],
+            [
+              "2",
+              "In Gemüsebrühe 15 Minuten köcheln lassen."
+            ],
+            [
+              "3",
+              "Nach Geschmack würzen und mit Brot servieren."
+            ]
+          ],
+          "Nährwerte": {
+            "Kcal": 300,
+            "Protein": 8,
+            "Kohlenhydrate": 40,
+            "Fett": 6
           }
         }
       ]
@@ -163,7 +1032,7 @@ var data = {
 }
 
 let currentDayOfWeek = 1;
-displayMeal(data.Dates[currentDayOfWeek]);
+displayMeal(data.Dates[currentDayOfWeek], 2);
 
 //Function for the JSON inputfield and changing data
 function openForm(){
@@ -174,22 +1043,20 @@ function openForm(){
   displayMeal(data.Dates[0]);
 }
 
-function displayMeal(meal){
-let currentMeal = 0;
+function displayMeal(meal, timeOfDay){
 
-console.log(meal);
 //Header
 document.getElementById("weekday").innerHTML = meal.Tag;
 document.getElementById("meal-dateofDay").innerHTML = meal.Datum;
 
 //Time of day
-document.getElementById("meal-timeOfDay").innerHTML = meal.Mahlzeiten[currentMeal].Name;
+document.getElementById("meal-timeOfDay").innerHTML = meal.Mahlzeiten[timeOfDay].Name;
 
 //Recipe
-document.getElementById("meal-recipe-name").innerHTML = meal.Mahlzeiten[currentMeal].Gericht;
+document.getElementById("meal-recipe-name").innerHTML = meal.Mahlzeiten[timeOfDay].Gericht;
 
 //Ingredients aka zutaten
-let ingredients = meal.Mahlzeiten[currentMeal].Zutaten;
+let ingredients = meal.Mahlzeiten[timeOfDay].Zutaten;
 let ingredientsHtml = document.getElementById("meal-ingredients");
 ingredientsHtml.innerHTML = "Zutaten: </br>";
 ingredientsHtml.innerHTML += "<ul>";
@@ -205,7 +1072,7 @@ ingredientsHtml.innerHTML += "</ul> </br></br>"
 
 //Preperations (also loop)
 
-let preperation = meal.Mahlzeiten[currentMeal].Zubereitung;
+let preperation = meal.Mahlzeiten[timeOfDay].Zubereitung;
 let preperationsHtml = document.getElementById("meal-preperations");
 
 preperationsHtml.innerHTML = "Zubereitung: </br>";
@@ -229,5 +1096,20 @@ function closefunction(){
 }
 
 function selectDay(day){
-  displayMeal(data.Dates[day]);
+  try{
+    displayMeal(data.Dates[day], 2);
+  }
+  catch(ex){
+
+  }  
+
+  for(let i=0; i<7; i++){
+    if(i == day){
+      let element = document.getElementById("container-" + day);
+      element.style.display="block";
+    }
+    else{
+      document.getElementById("container-" + i).style.display="none";
+    }
+  }
 }

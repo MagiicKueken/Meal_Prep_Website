@@ -6,8 +6,12 @@ portion sizes!!
 
 Styling:
 
-split up the li's in classes so we can apply different styling to each ingredients and preperation steps
+split up the li's in classes so we can apply different styling to each ingredients and preperation steps (check)
+
+switch up mittagessen and the day and date, looks weird rn.
+
 figure out why the section gets highlighted in blue on phone when selecting a day
+
 change font to: font-family: 'Trebuchet MS', sans-serif
 
 
@@ -22,6 +26,7 @@ requirements for the meals:	- not dry (sauce)
 				- cheap but good
 				- max 2000kcal per day
 				- give me snacks for in between meals
+				- i need some sort of sweets
 				
 
 grocery list:			- sorted by category
@@ -55,4 +60,9 @@ i like a lot:			- salmon
 				- eggs
 				- mozzarella
 				- romaine lettuce
-				- 
+				- raspberries
+				- strawberries
+				- bananas
+				- apples
+				- almonds
+				- peanuts
