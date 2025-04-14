@@ -17,10 +17,16 @@ public class Mahlzeit
 {
     public string Name { get; set; }
     public string Gericht { get; set; }
-    public List<List<string>> Zutaten { get; set; } //For example: [["2", "Rindersteaks (je 150 g)"]]
+    public List<Zutaten> Zutaten { get; set; }
     public List<List<string>> Zubereitung { get; set; } //For example: [["1", "Den Backofen auf 200 °C (Ober-/Unterhitze) vorheizen."]]
     public Naehrwerte Nährwerte { get; set; }
 }
+
+public class Zutaten{
+    public int Amount { get; set; }
+    public string Metric { get; set; }
+    public string Name { get; set; }
+}   
 
 public class Naehrwerte
 {

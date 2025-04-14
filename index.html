@@ -74,8 +74,13 @@
     </div>
 
     
+    
     <section id="section" onclick="closefunction()">
         <p id="meal-recipe-name">recipe-name</p> <!--Black-->
+        <div class="portionSizes">
+            <label style="font-size: 16px;">Portionen:</label>
+            <input id="portionInput" onchange="calculatePortions()" type=number value="1" class="resized-number"><br>
+        </div>
         <div id="meal-ingredients" class="li-ingredients"> </div> <!--Purple-->
         <div id="meal-preperations" class="li-preps"> </div> <!--Blue-->
     </section>
