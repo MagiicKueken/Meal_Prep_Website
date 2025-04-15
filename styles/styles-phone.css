@@ -9,14 +9,20 @@
 
     #img-magiic-chef{
         max-width: 120px;
+        margin-top: 10px;
     }
 
     #date-container{
         position: absolute;
-        bottom:70px;
-        margin-left:90px;
+        bottom:30px;
+        margin-left:70px;
+        font-size:110%;
     }
 
+    #sidenav{
+        width: 80px;
+    }
+    
     .sidebar {
         font-size: 15px;
     }
@@ -25,5 +31,11 @@
         z-index: 1;
         cursor: pointer;
         user-select:none;
+    }
+
+    #mainn{
+        margin-top:2px;
+        margin-left:5px;
+        font-size: 30px
     }
 }

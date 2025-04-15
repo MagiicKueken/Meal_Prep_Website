@@ -1,20 +1,20 @@
 
 body{
     margin:0;
-    background-color: #ebe0a0;
-    color:#3e3e3e;
+    background-color: #417087;
+    color:#aee0f8;
 }
 
 #header{
-    background-color: #519ca8;
+    background-color: #c2bfa7;
     /* background: linear-gradient(to bottom, #76adae 90%, #ffdbbb 150%); */
-    color:#080b36;
+    color:#6B553B;
     font-size: 150%;
-    font-family: 'Trebuchet MS', sans-serif;
-    margin:0;
+    font-family: 'Georgia', sans-serif;
+    margin-top:0;
     padding-bottom: 20px;
     /* padding-top: 10px; */
-    border-bottom: 10px solid #080b367f;
+    border-bottom: 10px solid #6B553B;
     /* line-height: 100px; */
     position: fixed;
     width: 100%;
@@ -24,19 +24,21 @@ body{
 
 #header h1{
     margin-bottom: 0;
-    margin-top: 0;
+    margin-top: 10px;
 }
 
 #date-container{
+    margin-top:20px;
     margin-left: 70px;
+    font-size:120%;
 }
 
 #section{
-    font-size:150%;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-size:180%;
+    font-family: 'Georgia';
     text-align: left;
     margin-left: 10%;
-    margin-top: 180px;
+    margin-top: 100px;
     padding-top: 2.5em;
     padding-right: 10%;
     transition: margin-left 1s;
@@ -53,11 +55,15 @@ body{
 .resized-number {
     width: 3em;   /* Change this to desired width */
     height: 1em;   /* Change this to desired height */
-    font-size: 16px; /* Optional: control text size */
+    font-family: 'Georgia';
+    font-size: 35px; /* Optional: control text size */
     padding: 1px;    /* Optional: control inner spacing */
-    color:#3e3e3e;
-    background-color: #ebe0a0;
+    margin-left: 20px;
+    color: #aee0f8;
+    background-color: #417087;
     border:none;
+    position: relative;
+    top:3px;
   }
 
   .inline-block{
@@ -105,7 +111,7 @@ ul {
 }
 
 #img-magiic-chef{
-    width: 180px;
+    width: 200px;
     float: right;
     z-index: 1;
 }
