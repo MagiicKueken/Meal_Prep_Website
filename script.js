@@ -952,4 +952,7 @@ function updateIngredients(ingredients) {
   ingredientsHtml.innerHTML += "</ul> </br></br>"
 }
 
-
+function resetPortion(){
+  portion = 1;
+  document.getElementById("portionInput").value = 1;
+}
