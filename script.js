@@ -901,10 +901,12 @@ function selectDay(day) {
       document.getElementById("container-" + i).style.display = "none";
     }
   }
+  resetPortion();
 }
 
 function selectMeal(meal) {
   currentTimeOfDay = meal;
+  resetPortion();
   displayMeal(data.Dates[currentDayOfWeek], currentTimeOfDay)
 }
 
@@ -944,8 +946,10 @@ function updateIngredients(ingredients) {
   for (let i = 0; i < ingredients.length; i++) {
     let currentIngredient = ingredients[i];
 
-    ingredientsHtml.innerHTML += "<li><span class='inline-block' style='width:80px; margin-left:10px;'>" + currentIngredient.Amount + " " + currentIngredient.Metric + "</span>" + "<span class='inline-block' style='margin-left:20px;'>" + currentIngredient.Name + "</span>" + "</li>";
+    ingredientsHtml.innerHTML += "<li><span class='inline-block' style='width:120px; margin-left:10px;'>" + currentIngredient.Amount + " " + currentIngredient.Metric + "</span>" + "<span class='inline-block' style='margin-left:20px;'>" + currentIngredient.Name + "</span>" + "</li>";
   }
 
   ingredientsHtml.innerHTML += "</ul> </br></br>"
 }
+
+
