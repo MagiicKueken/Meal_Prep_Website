@@ -830,102 +830,115 @@ var data = {
 }
 
 let currentDayOfWeek = 1;
-displayMeal(data.Dates[currentDayOfWeek], 2);
+let currentTimeOfDay = 2;
+displayMeal(data.Dates[currentDayOfWeek], currentTimeOfDay);
 
 //Function for the JSON inputfield and changing data
-function openForm(){
+function openForm() {
   let jsonString = prompt("Enter new JSON data:");
-  
+
   let jsonObject = JSON.parse(jsonString);
   data = jsonObject;
   displayMeal(data.Dates[0]);
 }
 
-function displayMeal(meal, timeOfDay){
+function displayMeal(meal, timeOfDay) {
+  //Header
+  document.getElementById("weekday").innerHTML = meal.Tag;
+  document.getElementById("meal-dateofDay").innerHTML = meal.Datum;
 
-//Header
-document.getElementById("weekday").innerHTML = meal.Tag;
-document.getElementById("meal-dateofDay").innerHTML = meal.Datum;
+  //Time of day
+  document.getElementById("meal-timeOfDay").innerHTML = meal.Mahlzeiten[timeOfDay].Name;
 
-//Time of day
-document.getElementById("meal-timeOfDay").innerHTML = meal.Mahlzeiten[timeOfDay].Name;
+  //Recipe
+  document.getElementById("meal-recipe-name").innerHTML = meal.Mahlzeiten[timeOfDay].Gericht;
 
-//Recipe
-document.getElementById("meal-recipe-name").innerHTML = meal.Mahlzeiten[timeOfDay].Gericht;
+  //Zutaten
+  updateIngredients(meal.Mahlzeiten[timeOfDay].Zutaten);
 
-updateIngredients(meal.Mahlzeiten[timeOfDay].Zutaten);
+  //Preperations (also loop)
+  let preperation = meal.Mahlzeiten[timeOfDay].Zubereitung;
+  let preperationsHtml = document.getElementById("meal-preperations");
 
-//Preperations (also loop)
+  preperationsHtml.innerHTML = "Zubereitung: </br>";
+  preperationsHtml.innerHTML += "<ol>";
 
-let preperation = meal.Mahlzeiten[timeOfDay].Zubereitung;
-let preperationsHtml = document.getElementById("meal-preperations");
-
-preperationsHtml.innerHTML = "Zubereitung: </br>";
-preperationsHtml.innerHTML += "<ol>";
-
-for (let i = 0; i < preperation.length; i++){
-  let currentStep = preperation [i];
-  preperationsHtml.innerHTML += '<li type="1">' + currentStep[1] + "</li>";
-}
-preperationsHtml.innerHTML += "</ol>";
+  for (let i = 0; i < preperation.length; i++) {
+    let currentStep = preperation[i];
+    preperationsHtml.innerHTML += '<li type="1">' + currentStep[1] + "</li>";
+  }
+  preperationsHtml.innerHTML += "</ol>";
 }
 
 //Sidebar
-function openfunction(){
-  document.getElementById("sidenav").style.width="225px";
-  document.getElementById("sidenav").style.transition="width 1s";
+function openfunction() {
+  document.getElementById("sidenav").style.width = "225px";
+  document.getElementById("sidenav").style.transition = "width 1s";
 }
 
-function closefunction(){
-  document.getElementById("sidenav").style.width="0px";
+function closefunction() {
+  document.getElementById("sidenav").style.width = "0px";
 }
 
-function selectDay(day){
-  try{
+function selectDay(day) {
+  try {
     currentDayOfWeek = day;
-    displayMeal(data.Dates[day], 2);
+    displayMeal(data.Dates[day], currentTimeOfDay);
   }
-  catch(ex){
+  catch (ex) {
 
-  }  
+  }
 
-  for(let i=0; i<7; i++){
-    if(i == day){
+  for (let i = 0; i < 7; i++) {
+    if (i == day) {
       let element = document.getElementById("container-" + day);
-      element.style.display="block";
+      element.style.display = "block";
     }
-    else{
-      document.getElementById("container-" + i).style.display="none";
+    else {
+      document.getElementById("container-" + i).style.display = "none";
     }
   }
 }
 
-function selectMeal(meal){
-  displayMeal(data.Dates[currentDayOfWeek], meal)
+function selectMeal(meal) {
+  currentTimeOfDay = meal;
+  displayMeal(data.Dates[currentDayOfWeek], currentTimeOfDay)
 }
 
-function calculatePortions(){
-  //zutaten [0] * number of inputfield
-    console.log("working!")
-    let portion = document.getElementById("portionInput").value;
-    let zutaten = data.Dates[currentDayOfWeek].Mahlzeiten[0].Zutaten;
-    let zutatenCopy = [...zutaten];
-    for(let i=0; i<zutaten.length; i++){  
-      let currentZutat = zutaten[i];
-      currentZutat.Amount = currentZutat.Amount * portion;
-    }
+// function calculatePortions() {
+//   let portion = document.getElementById("portionInput").value;
+//   let zutaten = data.Dates[currentDayOfWeek].Mahlzeiten[2].Zutaten; //problem occurs here bc of Mahlzeiten[0] not being dynamic
+//   let zutatenCopy = zutaten.slice();
 
-    updateIngredients(zutaten);
+//   for (let i = 0; i < zutatenCopy.length; i++) {
+//     let currentZutat = zutatenCopy[i];
+//     currentZutat.Amount = zutaten[i].Amount * portion;
+//   }
+
+//   updateIngredients(zutatenCopy);
+// }
+
+function calculatePortions() {
+  let portion = document.getElementById("portionInput").value;
+  let zutaten = data.Dates[currentDayOfWeek].Mahlzeiten[currentTimeOfDay].Zutaten;
+
+  // Deep copy the zutaten array to prevent mutation
+  let zutatenCopy = zutaten.map(z => ({
+    ...z,
+    Amount: z.Amount * portion
+  }));
+
+  updateIngredients(zutatenCopy);
 }
 
-function updateIngredients(ingredients){
-    //Ingredients aka zutaten
+function updateIngredients(ingredients) {
+  //Ingredients aka zutaten
   let ingredientsHtml = document.getElementById("meal-ingredients");
   ingredientsHtml.innerHTML = "Zutaten: </br>";
   ingredientsHtml.innerHTML += "<ul>";
 
   //Loop over all the ingredients, and display them in a list-style fashion onto the webpage
-  for (let i = 0; i < ingredients.length; i++){
+  for (let i = 0; i < ingredients.length; i++) {
     let currentIngredient = ingredients[i];
 
     ingredientsHtml.innerHTML += "<li><span class='inline-block' style='width:80px; margin-left:10px;'>" + currentIngredient.Amount + " " + currentIngredient.Metric + "</span>" + "<span class='inline-block' style='margin-left:20px;'>" + currentIngredient.Name + "</span>" + "</li>";

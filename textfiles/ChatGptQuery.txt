@@ -1,5 +1,60 @@
 Make me a week meal plan for next week (monday till sunday). Each day should have 3 meals: Fruhstuck, Mittagessen, Abendessen. You should output in json, using the following C# model. Please note the comments in the C# model, they are instructions for you.
-use german date formatting
+use german date formatting: DAY,MONTH,YEAR
+
+mind the following:
+
+requirements for the meals:	
+								- portion sizes!!
+								- not dry (sauce)
+								- balanced
+								- healthy
+								- lots of protein >100g a day
+								- change it up
+								- breakfast easy to prepare 
+								- cheap but good
+								- max 2000kcal per day
+								- give me snacks for in between meals
+								- i need some sort of sweets
+				
+
+grocery list:					- sorted by category
+								- give me approximate price per item
+								- summarize item prices 		
+ 				
+
+don't like:	 					- olives
+								- Ingwer
+								- chili / cayennepepper
+								- rucola
+								- sardines
+								- quinoa
+								- wildberries
+								- cherries
+								- raddichio
+ 
+
+i like a lot:					- salmon
+								- pork
+								- couscous
+								- rice
+								- corn
+								- bell peppers
+								- courgette (Zucchini)
+								- feta cheese (cowmilk)
+								- oats
+								- tuna (can)
+								- Asien veggies
+								- Asien noodles
+								- eggs
+								- mozzarella
+								- romaine lettuce
+								- raspberries
+								- strawberries
+								- bananas
+								- apples
+								- almonds
+								- peanuts
+
 
 using System;
 using System.Collections.Generic;
