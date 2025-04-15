@@ -20,7 +20,7 @@
 	width: 0px;
 	height:100%;
 	margin: 0px;
-	background-color: black;
+	background-color: #8c7c5d;
 	position: fixed;
 	top: 0px;
 	left: 0px;
@@ -29,17 +29,18 @@
 	line-height: 0.8em;
 	padding-top: 20px;
 	z-index: 2;
+	border-right: solid 10px #6f6651;
 }
 
 .sidebar a {
 	text-decoration: none;
-	color: white;
+	color: rgb(214, 200, 159);
 	display: block;
 	padding-left: 25px;
 }
 
 .sidebar a:hover{
-	color: grey;
+	color: rgb(17, 66, 141);
     cursor: pointer;
 }
 
