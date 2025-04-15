@@ -39,6 +39,7 @@ body{
     margin-top: 180px;
     padding-top: 2.5em;
     padding-right: 10%;
+    transition: margin-left 1s;
 }
 
 .center{

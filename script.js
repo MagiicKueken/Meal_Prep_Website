@@ -873,11 +873,14 @@ function displayMeal(meal, timeOfDay) {
 //Sidebar
 function openfunction() {
   document.getElementById("sidenav").style.width = "225px";
+  document.getElementById("section").style.marginLeft = "250px";
   document.getElementById("sidenav").style.transition = "width 1s";
+
 }
 
 function closefunction() {
   document.getElementById("sidenav").style.width = "0px";
+  document.getElementById("section").style.marginLeft = "5%";
 }
 
 function selectDay(day) {

@@ -28,6 +28,7 @@
 	padding-left: 0px;
 	line-height: 0.8em;
 	padding-top: 20px;
+	z-index: 2;
 }
 
 .sidebar a {
