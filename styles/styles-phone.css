@@ -1,10 +1,24 @@
 @media only screen and (max-width:400px){
     #header{
-        font-size: 100%;
+        font-size: 80%;
     }
+
+    #header h1{
+        padding-left:35px;
+        margin-top: 15px;
+    }
+
+    #date-container{
+        position: absolute;
+        top: 20px;
+    }
+
     #section{
-        margin-left: 5%;
-        margin-top: 90px;
+        margin-left: 30px;
+        padding-left:20px;
+        padding-right:5px;
+        margin-top: 110px;
+        font-size:120%;
     }
 
     #img-magiic-chef{
@@ -19,23 +33,35 @@
         font-size:110%;
     }
 
-    #sidenav{
-        width: 80px;
-    }
-    
     .sidebar {
-        font-size: 15px;
+        font-size: 20px;
     }
     
     .sidebar-container{
         z-index: 1;
         cursor: pointer;
         user-select:none;
+        -webkit-tap-highlight-color: none;
+    }
+
+    .timeOfDay-container{
+        font-size:15px;
     }
 
     #mainn{
         margin-top:2px;
         margin-left:5px;
         font-size: 30px
+    }
+
+    .resized-number{
+        font-size:20px;
+        position:relative;
+        top:1px;
+    }
+    
+    .inline-block{
+        width:80px;
+        margin-left:10px;
     }
 }

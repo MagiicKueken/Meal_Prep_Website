@@ -865,22 +865,49 @@ function displayMeal(meal, timeOfDay) {
 
   for (let i = 0; i < preperation.length; i++) {
     let currentStep = preperation[i];
-    preperationsHtml.innerHTML += '<li type="1">' + currentStep[1] + "</li>";
+    preperationsHtml.innerHTML += "<li type='1'>" + currentStep[1] + "</li>";
   }
   preperationsHtml.innerHTML += "</ol>";
 }
 
+let styleHeader = document.getElementById("date-container").style;
+
 //Sidebar
 function openfunction() {
-  document.getElementById("sidenav").style.width = "200px";
-  document.getElementById("section").style.marginLeft = "250px";
-  document.getElementById("sidenav").style.transition = "width 1s";
 
+  if(window.matchMedia("(max-width:400px)").matches){
+    document.getElementById("sidenav").style.width = "125px";
+    document.getElementById("section").style.marginLeft = "130px";
+    styleHeader.fontSize = "0.9em";
+    styleHeader.marginLeft = "120px";
+    document.getElementById("img-magiic-chef").style.maxWidth = "100px";
+    //styleHeader.transition = "width 0.8s";
+    document.getElementById("header").style.transition = "width 0.8s";
+  }
+  else{
+    document.getElementById("sidenav").style.width = "200px";
+    document.getElementById("section").style.marginLeft = "250px";
+  }
+
+  document.getElementById("sidenav").style.transition = "width 0.8s";
+  
 }
 
 function closefunction() {
-  document.getElementById("sidenav").style.width = "0px";
-  document.getElementById("section").style.marginLeft = "5%";
+
+  if(window.matchMedia("(max-width:400px)").matches){
+
+    document.getElementById("sidenav").style.width = "0px";
+    document.getElementById("section").style.marginLeft = "30px";
+    styleHeader.fontSize = "1.1em";
+    styleHeader.marginLeft = "70px";
+    document.getElementById("img-magiic-chef").style.maxWidth = "120px";
+  }
+  else{
+    document.getElementById("sidenav").style.width = "0px";
+    document.getElementById("section").style.marginLeft = "50px";
+  }
+    
 }
 
 function selectDay(day) {
@@ -910,19 +937,6 @@ function selectMeal(meal) {
   displayMeal(data.Dates[currentDayOfWeek], currentTimeOfDay)
 }
 
-// function calculatePortions() {
-//   let portion = document.getElementById("portionInput").value;
-//   let zutaten = data.Dates[currentDayOfWeek].Mahlzeiten[2].Zutaten; //problem occurs here bc of Mahlzeiten[0] not being dynamic
-//   let zutatenCopy = zutaten.slice();
-
-//   for (let i = 0; i < zutatenCopy.length; i++) {
-//     let currentZutat = zutatenCopy[i];
-//     currentZutat.Amount = zutaten[i].Amount * portion;
-//   }
-
-//   updateIngredients(zutatenCopy);
-// }
-
 function calculatePortions() {
   let portion = document.getElementById("portionInput").value;
   let zutaten = data.Dates[currentDayOfWeek].Mahlzeiten[currentTimeOfDay].Zutaten;
@@ -946,10 +960,10 @@ function updateIngredients(ingredients) {
   for (let i = 0; i < ingredients.length; i++) {
     let currentIngredient = ingredients[i];
 
-    ingredientsHtml.innerHTML += "<li><span class='inline-block' style='width:120px; margin-left:10px;'>" + currentIngredient.Amount + " " + currentIngredient.Metric + "</span>" + "<span class='inline-block' style='margin-left:20px;'>" + currentIngredient.Name + "</span>" + "</li>";
+    ingredientsHtml.innerHTML += "<li><span class='inline-block'>" + currentIngredient.Amount + " " + currentIngredient.Metric + "</span>" + "<span class='inline-block' style='width:100px;'>" + currentIngredient.Name + "</span>" + "</li>";
   }
 
-  ingredientsHtml.innerHTML += "</ul> </br></br>"
+  ingredientsHtml.innerHTML += "</ul> </br>"
 }
 
 function resetPortion(){

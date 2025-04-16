@@ -3,6 +3,7 @@ body{
     margin:0;
     background-color: #417087;
     color:#aee0f8;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #header{
@@ -41,7 +42,7 @@ body{
     margin-top: 100px;
     padding-top: 2.5em;
     padding-right: 10%;
-    transition: margin-left 1s;
+    transition: margin-left 0.8s;
 }
 
 .center{
@@ -68,6 +69,8 @@ body{
 
   .inline-block{
     display:inline-block;
+    width:120px;
+    margin-left:10px;
   }
 /*Button*/
 /* button{
@@ -103,6 +106,7 @@ li {
 
 .li-preps{
     font-size:80%;
+    margin-left:0;
 }
 
 ul {
@@ -114,4 +118,12 @@ ul {
     width: 200px;
     float: right;
     z-index: 1;
+}
+
+.hr{
+    margin-top: 20px;
+    width: 310px;
+    margin-right: 100px;
+    border-top: 3px solid #aee0f8;
+    border-radius: 2px;
 }

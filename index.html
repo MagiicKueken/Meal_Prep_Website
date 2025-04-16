@@ -62,7 +62,7 @@
             </div>
         </div>
 
-        <img id="img-magiic-chef" src="assets/magiic-chef.png" alt="magiic-chef.png">
+        <img id="img-magiic-chef"  onclick="openfunction()" src="assets/magiic-chef.png" alt="magiic-chef.png">
 
         <div id="date-container">
              <!--Green-->
@@ -77,13 +77,14 @@
     
     
     <section id="section" onclick="closefunction()">
-        <p id="meal-recipe-name">recipe-name</p> <!--Black-->
+        <p id="meal-recipe-name" style="font-size:28px; text-decoration-line:underline;">recipe-name</p> <!--Black-->
         <div class="portionSizes">
             <label style="font-size: 18px;">Portionen:</label>
             <input id="portionInput"  class="resized-number" onchange="calculatePortions()" min=1 type=number value="1"><br>
         </div>
-        <div id="meal-ingredients" class="li-ingredients"> </div> <!--Purple-->
-        <div id="meal-preperations" class="li-preps"> </div> <!--Blue-->
+        <div id="meal-ingredients" class="li-ingredients"></div> <!--Purple-->
+        <hr class ="hr"></br>
+        <div id="meal-preperations" class="li-preps"></div> <!--Blue-->
     </section>
 
     <script src="script.js"></script>
