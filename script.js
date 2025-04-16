@@ -865,7 +865,7 @@ function displayMeal(meal, timeOfDay) {
 
   for (let i = 0; i < preperation.length; i++) {
     let currentStep = preperation[i];
-    preperationsHtml.innerHTML += "<li type='1'>" + currentStep[1] + "</li>";
+    preperationsHtml.innerHTML += "<li type='1'>" + currentStep[1] + "</li></br>";
   }
   preperationsHtml.innerHTML += "</ol>";
 }
@@ -879,21 +879,22 @@ function openfunction() {
   if(window.matchMedia("(max-width:400px)").matches){
     document.getElementById("sidenav").style.width = "125px";
     document.getElementById("section").style.marginLeft = "130px";
-    styleImage.maxWidth = "100px";
-    styleImage.right = "25px";
-    styleImage.transitionDuration = "1s";
-    styleHeader.fontSize = "55%";
+    
+    styleHeader.fontSize = "80%";
     styleHeader.marginLeft = "130px";
     styleHeader.transitionDuration = "1s"
+    styleHeader.transitionDelay = "0.2s";
+    styleImage.right = "25px";
+    styleImage.maxWidth = "100px";
+    styleImage.transitionDuration = "1s";
+    
     
   }
   else{
     document.getElementById("sidenav").style.width = "200px";
     document.getElementById("section").style.marginLeft = "250px";
   }
-
   document.getElementById("sidenav").style.transition = "width 0.8s";
-  
 }
 
 function closefunction() {
@@ -902,16 +903,15 @@ function closefunction() {
 
     document.getElementById("sidenav").style.width = "0px";
     document.getElementById("section").style.marginLeft = "30px";
-    styleHeader.fontSize = "65%";
+    styleHeader.fontSize = "100%";
     styleHeader.marginLeft = "70px";
-    document.getElementById("img-magiic-chef").style.maxWidth = "120px";
-    styleImage.right = "5px";
+    styleImage.maxWidth = "120px";
+    styleImage.right = "-5px";
   }
   else{
     document.getElementById("sidenav").style.width = "0px";
     document.getElementById("section").style.marginLeft = "130px";
-  }
-    
+  } 
 }
 
 function selectDay(day) {
