@@ -81,21 +81,11 @@
         width: 150px;
         margin-right: 50px;
         border-top: 3px solid #aee0f8;
+        border-radius: 3px;
     }
 
     #meal-recipe-name{
         font-size: 30px;
         text-decoration-line:underline;
-    }
-
-    .li-ingredients{
-        font-size:90%;
-        padding-top:1rem;
-    }
-    
-    .li-preps{
-        font-size:100%;
-        margin-left:0;
-        padding-top: 0.5rem;
     }
 }
