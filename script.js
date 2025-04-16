@@ -871,6 +871,7 @@ function displayMeal(meal, timeOfDay) {
 }
 
 let styleHeader = document.getElementById("date-container").style;
+let styleImage = document.getElementById("img-magiic-chef").style;
 
 //Sidebar
 function openfunction() {
@@ -878,11 +879,13 @@ function openfunction() {
   if(window.matchMedia("(max-width:400px)").matches){
     document.getElementById("sidenav").style.width = "125px";
     document.getElementById("section").style.marginLeft = "130px";
-    styleHeader.fontSize = "0.9em";
-    styleHeader.marginLeft = "120px";
-    document.getElementById("img-magiic-chef").style.maxWidth = "100px";
-    //styleHeader.transition = "width 0.8s";
-    document.getElementById("header").style.transition = "width 0.8s";
+    styleImage.maxWidth = "100px";
+    styleImage.right = "25px";
+    styleImage.transitionDuration = "1s";
+    styleHeader.fontSize = "55%";
+    styleHeader.marginLeft = "130px";
+    styleHeader.transitionDuration = "1s"
+    
   }
   else{
     document.getElementById("sidenav").style.width = "200px";
@@ -899,13 +902,14 @@ function closefunction() {
 
     document.getElementById("sidenav").style.width = "0px";
     document.getElementById("section").style.marginLeft = "30px";
-    styleHeader.fontSize = "1.1em";
+    styleHeader.fontSize = "65%";
     styleHeader.marginLeft = "70px";
     document.getElementById("img-magiic-chef").style.maxWidth = "120px";
+    styleImage.right = "5px";
   }
   else{
     document.getElementById("sidenav").style.width = "0px";
-    document.getElementById("section").style.marginLeft = "50px";
+    document.getElementById("section").style.marginLeft = "130px";
   }
     
 }
